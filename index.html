@@ -21,6 +21,7 @@
             text-align: center;
             background-color: rgb(37, 3, 23);
             color: #FFF;
+            
         }
         .inputBox{
             height: 35px;
@@ -38,6 +39,8 @@
             margin-left: 2px;
             color: white;
             height: 35px;
+            width:70%;
+            margin-top:2%;
         }
         button:hover{
             background-color: white;
@@ -77,18 +80,18 @@ background: radial-gradient(circle, rgb(192, 194, 201) 0%, rgba(252,70,107,1) 10
 </head>
 <body>
             <div class="Form">
-                    <h1 class="heading"><b><i>CALCULATOR</i></b></h1>
+                    <h1 class="heading"><b><i class="calc">CALC</i></b></h1>
                     <input type="text" class="inputBox" id="firtInput" placeholder="Enter first number">
                     <br>
                     <br> 
                     <input type="text" class="inputBox" id="SecondInput" placeholder="enter second number">
 
                    <div class="btnBox">
-                    <button onclick="add()">ADDITION</button><Button onclick="mul()">MULTIPLICTION</Button><Button onclick="divi()">DIVISION</Button>
+                    <button onclick="add()">ADDITION</button><Button onclick="mul()">MUL</Button><Button onclick="divi()">DIVISION</Button>
                    </div>
 
                    <div class="box">
-                        <h1 style="margin-left:100px;color:white;">ANSWER </h1>
+                        <h1 style="margin-left:10%;color:white;font-size:20px;">ANSWER </h1>
                         <h1 id="ans" class="answer"></h1>
                         
                    </div>
