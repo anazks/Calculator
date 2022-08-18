@@ -75,12 +75,28 @@ background: radial-gradient(circle, rgb(192, 194, 201) 0%, rgba(252,70,107,1) 10
             background-color: yellow;
             
         } */
-        
+        @media only screen and (max-width: 600px) {
+            .inputBox{
+            height: 35px;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 30px;
+            border: 2px solid rgb(9, 9, 9);
+        }
+        .Form{
+            margin-top: 50px;
+            height: 600px;
+            margin-left: 10%;
+            width: 80%;
+            background-color: rgb(217, 53, 143);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+}
     </style>
 </head>
 <body>
             <div class="Form">
-                    <h1 class="heading"><b><i class="calc">CALC</i></b></h1>
+                    <h1 class="heading"><b><i class="calc">CALCULATOR</i></b></h1>
                     <input type="text" class="inputBox" id="firtInput" placeholder="Enter first number">
                     <br>
                     <br> 
