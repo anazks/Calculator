@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(121, 10, 104);
+        }
+        .Form{
+            margin-top: 50px;
+            height: 500px;
+            margin-left: 30%;
+            width: 40%;
+            background-color: rgb(217, 53, 143);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        .heading{
+            text-align: center;
+            background-color: rgb(37, 3, 23);
+            color: #FFF;
+        }
+        .inputBox{
+            height: 35px;
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 30px;
+            border: 2px solid rgb(9, 9, 9);
+        }
+        .btnBox{
+            margin-left:25%;
+            margin-top: 20px;
+        }
+        button{
+            background-color: black;
+            margin-left: 2px;
+            color: white;
+            height: 35px;
+        }
+        button:hover{
+            background-color: white;
+            font-style: italic;
+            color: black;
+            border-radius: 30px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        .box{
+            display:flex;
+            margin-top:50px;
+            background-color: black;
+            box-shadow: rgba(251, 246, 246, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            
+        }
+        .box:hover{
+            background: rgb(63,94,251);
+background: radial-gradient(circle, rgb(192, 194, 201) 0%, rgba(252,70,107,1) 100%);
+            color: rgb(185, 29, 29);
+        }
+        .answer{
+           margin-left: 10px;
+           color:#FFF
+        }
+        .answer:hover{
+            color: black;
+        }
+        /* .btnBox{
+            height: 30px;
+            width: 70%;
+            margin-left: 15%;
+            background-color: yellow;
+            
+        } */
+        
+    </style>
+</head>
+<body>
+            <div class="Form">
+                    <h1 class="heading"><b><i>CALCULATOR</i></b></h1>
+                    <input type="text" class="inputBox" id="firtInput" placeholder="Enter first number">
+                    <br>
+                    <br> 
+                    <input type="text" class="inputBox" id="SecondInput" placeholder="enter second number">
+
+                   <div class="btnBox">
+                    <button onclick="add()">ADDITION</button><Button onclick="mul()">MULTIPLICTION</Button><Button onclick="divi()">DIVISION</Button>
+                   </div>
+
+                   <div class="box">
+                        <h1 style="margin-left:100px;color:white;">ANSWER </h1>
+                        <h1 id="ans" class="answer"></h1>
+                        
+                   </div>
+            </div>
+            <script>
+               function add(){
+                    console.log("function working");
+                    let valueOne = document.getElementById("firtInput").value;
+                    console.log(valueOne)
+                    let valueTwo = document.getElementById("SecondInput").value;
+                    console.log(valueTwo)
+                    let sum = parseInt(valueOne) + parseInt(valueTwo);
+                    document.getElementById("ans").innerHTML=sum;
+                }
+                function mul(){
+                    console.log("function working");
+                    let valueOne = document.getElementById("firtInput").value;
+                    console.log(valueOne)
+                    let valueTwo = document.getElementById("SecondInput").value;
+                    console.log(valueTwo)
+                    let sum = parseInt(valueOne) * parseInt(valueTwo);
+                    document.getElementById("ans").innerHTML=sum;
+                }
+                function divi(){
+                    console.log("function working");
+                    let valueOne = document.getElementById("firtInput").value;
+                    console.log(valueOne)
+                    let valueTwo = document.getElementById("SecondInput").value;
+                    console.log(valueTwo)
+                    let sum = parseInt(valueOne) / parseInt(valueTwo);
+                    document.getElementById("ans").innerHTML=sum;
+                }
+            </script>
+</body>
+</html>
